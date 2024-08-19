@@ -1,0 +1,246 @@
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background-color: #8ECDDD;
+  height: 56px;
+  padding: 10px 20px 10px 20px;
+  z-index: 8
+}
+
+.logo{
+ height: 65px;
+}
+
+.profile-tab{
+  display: flex;
+  align-items: center;
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-img {
+  height: 50px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.sign-out {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 8px;
+  text-decoration: none;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.profile{
+  color: #1f5c80;
+  font-size: 15px;
+}
+
+.id{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-bar{
+  position: fixed;
+  top: 74px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 3;
+}
+
+.features{
+  display: flex;
+}
+
+.home-button, .alert-button, .request-button, .edit-route-button, .attendance-button{
+  padding: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 0px;
+  border: 1px solid gainsboro;
+}
+
+.home-button:hover, .alert-button:hover, .request-button:hover, .dropdown:hover, .edit-route-button:hover, .attendance-button:hover {
+  background-color:#1f5c80;
+  color: white;
+}
+
+.alert-page{
+  position: relative;
+  top: 100px;
+  background-color: black;
+  width: 200px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  margin-right: 5px;
+}
+
+.my-input {
+  color: white;
+  background-color: #1f5c80;
+  font-size: 16px;
+  padding: 14px 0px 12px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.my-input:focus {
+  outline: none;
+}
+
+.my-input::placeholder {
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  color: black;
+}
+
+.route-option {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.route-option:last-child {
+  border-bottom: none;
+}
+
+.route-option:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#map {
+  position: fixed;
+  top: 130px;
+  left: 0px;
+  bottom: 0px;
+  width: 72vw;
+  height: 80vh;
+}
+
+.info{
+  position: fixed;
+  top: 130px;
+  left: 75%;
+  right: 20px;
+  bottom: 0px;
+  height: 100vh;
+}
+.highlight{
+  background-color: #ddd;
+}
+
+.edit-route-button{
+  width: 133px;
+}
+
+.edit-dropdown {
+  width: 133px;
+  position: relative;
+  display: inline-block;
+}
+
+.edit-dropdown:hover .edit-dropdown-content {
+  display: block;
+  z-index: 1000;
+  width: 130px;
+}
+
+.edit-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.edit-dropdown a:hover {
+  background-color: #ddd;
+}
+
+.edit-dropdown:hover .edit-dropdown-content {
+  color: rgb(255, 255, 255);
+  display: block;
+  z-index: 1000;
+}
+
+.edit-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 123px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.nested-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9f9;
+  min-width: 127px;
+  box-shadow: 8px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nested-dropdown:hover .nested-dropdown-content {
+  display: block;
+}
+
+#boarding-point-list{
+  font-size: 15px;
+}

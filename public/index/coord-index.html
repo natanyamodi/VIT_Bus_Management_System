@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinator Index</title>
+
+    <link rel="stylesheet" href="../web-styles/index.css">
+
+    <link rel="stylesheet" href="../web-styles/details.css">
+
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script  type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzZugl8OoPpi2id4j975QuGkiJLQH3pmE&libraries=places,geometry&callback=initMap"></script> 
+    
+
+    <script type="module" src="../scripts/Login/auth-check.js"></script>
+    <script type="module" src="../scripts/Firebase/config.js"></script>    
+  </head>
+  <body>
+    <img class="background" src="../images/bg.png">
+
+    <div class="top-bar">
+      <img class="logo" src="../images/vit-logo.png">
+      <div class="profile-tab">
+
+
+        <div class="profile-container">
+          <img src="../images/Black Geometric Depop Profile Picture (1).png" class="profile-img"> 
+        </div>
+
+        <div class="profile">
+          <div class="id"></div>
+          <div>VIT Admin</div>
+          <script src="../scripts/username.js"></script>
+        </div>
+
+        <div class="sign-out" id="signOut">Signout</div>
+        <script type="module" src="../scripts/Login/signout.js"></script>
+        
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="features">
+        <a href="../Index/admin-index.html">
+          <button class="home-button">Home</button>
+        </a>
+
+        <div class="edit-dropdown">
+          <button class="edit-route-button">See All</button>
+          <div class="edit-dropdown-content">
+            <a href="../Route/show-routes.html" >Show Routes</a>
+            <a href="../Driver/show-drivers.html" >Show Drivers</a>
+            <a href="../Bus/show-buses.html">Show Buses</a>
+          </div>
+        </div>
+
+        <div class="edit-dropdown">
+          <button class="edit-route-button">Route Data</button>
+          <div class="edit-dropdown-content">
+            <a href="../Route/add-route.html" >Add Route</a>
+            <a href="../Route/edit-route.html" >Enable-Disable</a>
+            <a href="../Route/update-route.html">Update Route</a>
+            <a href="../Route/delete-route.html">Delete Route</a>
+            <a href="../Route/add-stops.html">Add Stops</a>
+            
+          </div>
+        </div>
+
+        <div class="edit-dropdown">
+          <button class="edit-route-button">Bus Data</button>
+          <div class="edit-dropdown-content">
+            <a href="../Bus/add-bus.html" >Add Bus</a>
+            <a href="../Bus/update-bus.html" >Update Bus</a>
+            <a href="../Bus/delete-bus.html">Delete Bus</a>
+          </div>
+        </div>
+
+        <div class="edit-dropdown">
+          <button class="edit-route-button">Driver Data</button>
+          <div class="edit-dropdown-content">
+            <a href="../Driver/add-driver.html" >Add Driver</a>
+            <a href="../Driver/update-driver.html" >Update Driver</a>
+            <a href="../Driver/delete-driver.html">Delete Driver</a>
+          </div>
+        </div>
+
+        <a href="../Attendance/attendance.html">
+          <button class="attendance-button">
+            Attendance
+          </button>
+        </a>
+        <a href="../Re-Routing/request.html">
+          <button class="attendance-button">
+              Rerouting
+          </button>
+        </a>
+      </div>      
+      <div class="dropdown">
+        <input type="text" placeholder="Search for Buses" class="my-input" id="search-input">
+        <div class="dropdown-content" id="route-dropdown"></div>
+      </div>          
+    </div>
+
+
+    
+    <div id="map">
+      <script type="module" src="../scripts/Location_and_Live_Location/admin-firebase.js"></script>
+      <script src="../scripts/Index/admin-index.js"></script>
+    </div> 
+
+
+  </body>
+</html>

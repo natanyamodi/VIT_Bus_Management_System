@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <link rel="stylesheet" href="../web-styles/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <script src="../init.js" type="module"></script>
+  <script type="module" src="../scripts/Login/login.js"></script>
+
+</head>
+<body>
+  <img class="background" src="../images/bg.png">
+  <a href="login.html">
+    <img class="vit-logo" src="../images/vit-logo.png" >
+  </a>
+  <div class="login-box">
+    <div class="login">Login</div>
+    <div class="credentials">
+      <div>Id</div>
+      
+      <input type="text" class="id-box" placeholder="Enter Id" id="id">
+
+      <div>Password</div>
+
+      <div class="pw-container">
+        <input type="password" class="pw-box" placeholder="Enter password" id="password">
+        <button class="toggle-password">
+          <i class="fa fa-eye-slash" id="toggle-password-icon"></i>
+        </button>
+      </div>
+
+      
+    </div>
+    
+    <button class="submit-button" 
+    >Submit</button>
+    
+    <hr style="border: none; border-top: 3px solid #1f5c80; margin: 2px 0;">
+
+    <button class="login-button">Or Log in With Google</button>
+
+    
+
+    <!--
+    <a class="forget" href="" target="_blank">Forgot Password</a>
+    <a class="forget" href="" target="_blank">Forgot LoginId</a>
+    -->
+  </div>
+
+  <div class="bar"></div>
+
+</body>
+</html>

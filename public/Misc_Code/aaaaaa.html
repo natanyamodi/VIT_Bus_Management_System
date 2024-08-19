@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Firestore Demo</title>
+  <!-- Add Firebase JavaScript SDK -->
+  <script type="module">
+   // history.js
+
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  getDocs,
+  collection,
+  deleteDoc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB1zdPdHi6njKUgiukk-84RVPEzOJFcAxc",
+  authDomain: "vit-bus-tracking.firebaseapp.com",
+  databaseURL: "https://vit-bus-tracking-default-rtdb.firebaseio.com",
+  projectId: "vit-bus-tracking",
+  storageBucket: "vit-bus-tracking.appspot.com",
+  messagingSenderId: "832936720267",
+  appId: "1:832936720267:web:4f170bd4652b5ae10d618e",
+  measurementId: "G-5L7PE5VHHX",
+};
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Reference to the document with ID "token123" in the "SDM_token" collection
+    const sdmTokenDocRef = doc(collection(db, 'SDM_TOKEN'), 'token123');
+
+await setDoc(sdmTokenDocRef, { token: currentToken }, { merge: true });
+
+
+    // Get the document by its reference
+    const docSnapshot=await getDoc(sdmTokenDocRef);
+    const docRef=docSnapshot.data();
+    const token=docRef.token;
+
+  console.log(token);
+
+  </script>
+</head>
+<body>
+  <h1>Firebase Firestore Integration</h1>
+  <!-- Any other HTML content you wish to add -->
+</body>
+</html>

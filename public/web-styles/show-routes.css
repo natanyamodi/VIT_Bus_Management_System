@@ -1,0 +1,22 @@
+th, td {
+  padding: 12px 105px;
+  text-align: center;
+  border-bottom: 2px solid #c5c4c4;
+  border-right: 2px solid #c5c4c4;
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+th{
+  font-size: 30px;
+}
+
+
+.rou-info{
+  position: fixed;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+}

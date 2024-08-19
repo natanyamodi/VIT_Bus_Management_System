@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+}
+
+#popup-window {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}

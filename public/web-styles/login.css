@@ -1,0 +1,104 @@
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.vit-logo{
+  position: fixed;
+  width: 230px;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+}
+.login-box{
+  display: flex;
+  flex-direction: column;
+  background-color: #8ECDDD;
+  font-size: 30px;
+  width: 400px;
+  height: auto;
+  padding: 32px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.login{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.id-box, .pw-box{
+  background-color: #ffffff;
+  border: none;
+  width: 290px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 1.5px 3px 5px #313131;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.submit-button{
+  margin-bottom: 15px;
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.login-button{
+  margin-top: 20px;
+  padding: 10px;
+  width: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.forget{
+  font-size: 15px;
+  color: white;
+  margin-bottom: 4px;
+
+}
+
+.bar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  height: 20px;
+}
+
+.toggle-password{
+  background-color: #ffffff;
+  border: none;
+  height: 26px;
+  border-radius: 50px;
+  margin-left: 2px;
+  cursor: pointer;
+}
